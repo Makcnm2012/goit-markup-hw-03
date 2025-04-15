@@ -167,9 +167,6 @@ ul {
     background-color: #ffffff;
 }
 
-.studio-list-line{
-    width: calc((100% - 72px) / 4);
-}
 
 .studio-head {
     font-size: 20px;
@@ -208,11 +205,6 @@ ul {
     gap: 24px;
 }
 
-.our-team-list {
-    width: calc((100% - 72px) * 4);
-    border-radius: 0px 0px 4px 4px;
-    background-color: #ffffff;
-}
 
 .team-name-and-desc{
     padding: 32px 0;    
@@ -249,9 +241,6 @@ ul {
     max-width: 264;
 }
 
-.portfolio-list-item {    
-    width: calc((100% - 48px) / 3);
-}
 
 .portofolio-name-and-desc {
     padding: 32px 16px;
