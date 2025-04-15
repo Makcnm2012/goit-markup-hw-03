@@ -273,3 +273,17 @@ ul {
     max-width: 264px;
     color: #f4f4fd;
 }
+
+.studio-list-line{
+    width: calc( ( 100% - 72px ) / 4 );
+}
+
+.our-team-list {
+    width: calc( ( 100% - 72px ) / 4 );
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ffffff;
+}
+
+.portfolio-list-item {
+    width: calc( ( 100% - 48px ) / 3 );
+}
