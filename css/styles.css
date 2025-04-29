@@ -1,16 +1,39 @@
-body{
-    font-family: "Roboto", sans-serif;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
     color: #434455;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
 }
 
 img {
     display: block;
     max-width: 100%;
-}
-
-ul {
-    list-style-type: none;
+    height: auto;
 }
 
 .container {
@@ -18,6 +41,8 @@ ul {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section {
@@ -25,55 +50,50 @@ ul {
     padding-bottom: 120px;
 }
 
-.header{
-    display: flex;
-    align-items: baseline;
-    border-bottom: 1px solid #e7e9fc;
-}
-
-.header-container{
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-logo {
-    display: flex;
-    align-items: center;
-}
-
 .logo-top{
     font-family: "Raleway", sans-serif;
-    font-size: 18px;
     font-weight: 700;
+    font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-decoration: none;
-    margin-right: 76px;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .logo-black {
     color: #2e2f42;
 }
 
-.logo-white{
-    color: #f4f4fd;    
+.header{
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    gap: 76px;
+    align-items: center;
 }
 
 .header-nav {
-    display: flex;
     gap: 40px;
 }
 
 .header-link{
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-decoration: none;
-    padding-top: 24px;
-    padding-bottom: 24px;
     color: #2e2f42;
+    text-decoration: none;
+    padding: 24px 0;
 }
 
 .header-link:hover,
@@ -91,16 +111,15 @@ ul {
 }
 
 .header-address-link {
-    display: flex;
     gap: 40px;
 }
 
 .address-link{
-    font-size: 16;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-decoration: none;    
     color: #434455;
+    text-decoration: none;    
 }
 
 .address-link:hover,
@@ -109,41 +128,40 @@ ul {
 }
 
 .main-button-area{
-    padding: 188px 0;
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 
 .main-heading{
     font-size: 56px;
-    font-weight: 700;
     line-height: 1.07;
-    letter-spacing: 0.02em;
     text-align: center;
-    max-width: 496px;
+    letter-spacing: 0.02em;
     color: #ffffff;
+    max-width: 496px;
+    margin: 0 auto 48px;
 }
 
 .main-button {
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    line-height: 1.5;
-    cursor: pointer;   
     display: block;
+    background-color: #4d5ae5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    margin: 0 auto;    
+    color: #ffffff;
+    cursor: pointer;   
     min-width: 169px;
     height: 56px;
     border: none;
     border-radius: 4px;
-    color: #ffffff;
-    background-color: #4d5ae5;
 }
 
 .main-button:hover,
 .main-button:focus {
     background-color: #404bbf;
-}
-
-.studio{
-    padding: 120px 0;
 }
 
 .visually-hidden {
@@ -155,16 +173,14 @@ ul {
     padding: 0;
     
     white-space: nowrap;
-    clip-path: inset(100%);
+    clip-path: ыinset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
 .studio-list {
-    display: flex;
-    justify-content: center;
     gap: 24px;
-    background-color: #ffffff;
+    width: calc((100% - 72px) / 4);
 }
 
 .studio-list-line{
@@ -172,12 +188,12 @@ ul {
 }
 
 .studio-head {
-    font-size: 20px;
     font-weight: 500;
+    font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .studio-text {
@@ -188,30 +204,27 @@ ul {
 }
 
 .our-team {
-    padding: 120px 0;
     background-color: #F4F4FD;
 }
 
 .our-team-title{
     font-size: 36px;
-    font-weight: 700;
     line-height: 1.11;
+    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    text-align: center;
-    margin-bottom: 72px;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 
 .our-team-all-list{
-    display: flex;
     gap: 24px;
 }
 
 .our-team-list {
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
+    border-radius: 0 0 4px 4px;
+    text-align: center;
 }
 
 .team-name-and-desc{
@@ -219,50 +232,67 @@ ul {
 }
 
 .team-names{
-    font-size: 20px;
     font-weight: 500;
+    font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: #2e2f42;
     text-align: center;
     margin-bottom: 8px;
-    color: #2e2f42;
 }
 
 .team-desc{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #434455;
-}
-
-.portfolio{
-    padding: 120px 0;
 }
 
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 24px;
+    gap: 24px;
     row-gap: 48px;
-    max-width: 264;
+    list-style: none;
 }
 
 .portfolio-list-item {
     width: calc((100% - 48px) / 3);
+    text-align: left;
 }
 
 .portofolio-name-and-desc {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+}
+
+.porfolio-names{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
     margin-bottom: 8px;
 }
 
+.portfolio-desc{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
 .footer{
-    padding: 100px 0;
     background-color: #2e2f42;
+    text-align: left;
+    padding: 100px 0;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.footer-container {
+    margin-left: 156px;
 }
 
 .logo-bottom {
@@ -278,9 +308,13 @@ ul {
     color: #4d5ae5;
 }
 
+.logo-white{
+    color: #f4f4fd;    
+}
+
 .footer-text{
     line-height: 1.5;
+    color: #f4f4fd;
     letter-spacing: 0.02em;
     max-width: 264px;
-    color: #f4f4fd;
 }
